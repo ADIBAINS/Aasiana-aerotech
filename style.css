@@ -1,0 +1,355 @@
+/*Properties applicable to whole File */
+
+
+
+
+
+/* START */
+
+body{    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Newsreader", serif;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul{
+    list-style: none;
+}
+
+/*END*/
+
+
+
+
+
+/*Properties for NAV Bar*/
+
+/* START */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.303);
+    border-right: none;
+}
+
+nav a{
+    text-decoration: 0;
+    color: black;
+    /* border: 2px solid rgba(0, 0, 0, 0.833); */
+    padding: 8px;
+    border-radius: 10px;
+}
+
+nav .logo{
+    width:12%;
+}
+
+
+
+nav .logo img{
+    margin-left: 2rem;
+    height: 5rem;
+    width: 7rem;
+}
+
+nav .navopt{
+    flex-grow: 1;
+}
+
+nav .navopt ul{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    gap: 1.3rem;
+    height: 3rem;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav .navopt a:hover{
+    /* background-color: rgb(20, 50, 221); */
+    color: rgb(147, 30, 30);
+    box-shadow: 0 0 3px rgb(47, 3, 206);
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.1s;
+
+}
+
+
+.job-btn button{
+    margin: 0 1rem 0 1rem;
+    padding: 8px 14px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor:pointer;
+    font-weight: 600;
+}
+
+.job-btn button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+
+/* END */
+
+
+/*Properties for HOME Page*/
+
+/* START */
+
+
+.homepage{
+    height:120vh;
+    width: 100%;
+    margin-bottom: 6rem;
+    background-image: url("./assets/mainback.JPG");
+    background-size: cover;
+    color: black;
+    /* flex: 1; */
+}
+
+.homepagemain{ 
+    position:static;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.homepagetext{
+    font-weight: 500;
+    font-size: 3rem;
+    text-align: start;
+    color: white;
+}
+
+
+.homepageimg{
+    height: 8rem;
+    margin-left: 2rem;
+}
+
+
+
+
+
+
+
+/* END */
+
+
+/*Properties for HOMEintro Page*/
+
+/* START */
+.mainintro{
+    background-image: url("./assets/Adobe Express - file.png");
+    background-size: cover;
+    display: flex;
+    height:120vh;
+    width: 100%;
+    margin-bottom: 4rem;
+    background-color: rgba(255, 255, 255, 0.959);
+    justify-content: center;
+    align-content:flex-start ;
+
+}
+
+.textintro{
+    font-size: 22px;
+    text-align: start;
+    color: black;
+}
+
+.textintro .headingtextintro{
+    font-family: "PT serif", serif;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.textintro .descintro{
+    font-weight: 400;
+    line-height: 1.75rem;
+    width: 45rem;
+    height: 40vh;
+    font-size: 18px;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+/* END */
+
+.servicesmain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    height:110vh;
+    width: 100%;
+}
+
+
+
+.service-cards{
+    /* flex: 1; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.service-heading{
+    text-decoration:  4px underline rgb(00, 00, 00);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+    margin: 3rem 0 3rem 0;
+    height: 3rem;
+    color: rgba(33, 32, 32, 0.91);
+}
+
+
+
+.service-card{
+    border-radius: 1.4rem;
+    display: flex;
+    /* margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem; */
+    flex-direction: column;
+    height: 28rem;
+    width: 18rem;
+    color: white;
+    border: 4px solid black;
+    background-color: rgba(108, 27, 27, 1);
+
+
+}
+
+.service-card:hover{
+    transform: scale(1.1);
+    background-color: rgb(4, 38, 142);
+}
+
+.service-card-comp{
+    text-align: center;
+}
+
+.service-card i{
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+    line-height: 6rem;
+    font-size: 5rem;
+    height: 8rem;
+    width: 15rem;
+}
+
+
+.service-card .sccheading{
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 2.5rem;
+    width: 15rem;
+}
+
+.service-card .scctextbox{
+    text-align: justify;
+    margin-top: 1.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height:12rem ;
+    width: 15rem;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonialsmain{
+    /* flex: 1; */
+    margin-bottom: 4rem;
+    height:120vh;
+    width: 100%;
+    background-color: rgba(48, 46, 46, 0.736);
+}
+.clientsmain{
+    /* flex: 1; */
+    margin-bottom: 4rem;
+    height:100vh;
+    width: 100%;
+    background-color: rgba(48, 46, 46, 0.736);
+}
+.aboutmain{
+    /* flex: 1; */
+    margin-bottom: 4rem;
+    height:100vh;
+    width: 100%;
+    background-color: rgba(48, 46, 46, 0.736);
+}
+.implink-contactmain{
+    /* flex: 1; */
+    margin-bottom: 4rem;
+    height:100vh;
+    width: 100%;
+    background-color: rgba(48, 46, 46, 0.736);
+}
