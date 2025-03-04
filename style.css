@@ -1,8 +1,9 @@
 /*Properties applicable to whole File */
 
-/* :root{
-    --bgcolor-: color)
-} */
+:root{
+    --heading: "Roboto Slab", serif; 
+    --subheading: "Montserrat", sans-serif;
+}
 
 
 
@@ -93,7 +94,7 @@ nav .navopt a:hover{
 
 
 .job-btn {
-    font-family:monospace;
+    font-family:var(--subheading);
     margin: 0 4rem 0 1rem;
     padding: 6px 16px;
     border-radius: 16px;
@@ -147,7 +148,7 @@ nav .navopt a:hover{
     height:100vh;
     width: 100%;
     margin-bottom: 2rem;
-    background-color: rgba(234, 240, 251, 1);
+    background-color: rgba(239, 241, 245, 0.945);
     justify-content: center;
     align-content:center ;
 
@@ -161,7 +162,7 @@ nav .navopt a:hover{
 }
 
 .textintro .headingtextintro{
-    font-family: "Dela Gothic One", serif ;
+    font-family: var(--heading) ;
     text-align: center;
     margin-bottom: 0.75rem;
 }
@@ -173,7 +174,7 @@ nav .navopt a:hover{
     font-size: 16.5px;
     opacity: 0.85;
     text-align: justify;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:var(--subheading)
 }
 
 .desctext{
@@ -190,9 +191,10 @@ nav .navopt a:hover{
 }
 
 .service-heading{
-    font-family: "Dela Gothic One", serif ;
+    font-family: var(--heading);
     text-align: center;
     font-size: 2rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     
@@ -218,7 +220,7 @@ nav .navopt a:hover{
 
 }
 
-.card2{
+.card2,.card4{
     flex-direction: row-reverse;
 }
 
@@ -327,16 +329,17 @@ nav .navopt a:hover{
 }
 
 .servicecardheading{
-    font-family: "Dela Gothic One", serif ;
+    font-family: var(--heading) ;
     text-align: center;
     margin: 1.2rem 0 1rem 0;
     font-size: 2rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
 
 .servicecardpara{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:var(--subheading);
     font-size: 12px;
     opacity: 0.85;
     text-align: justify;
@@ -353,54 +356,237 @@ nav .navopt a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .testimonialsmain{
-    /* flex: 1; */
+    flex: 1;
     margin-bottom: 4rem;
     height:100vh;
     width: 100%;
     background-color: rgba(229, 237, 248, 1);
 }
 .clientsmain{
-    /* flex: 1; */
+    flex: 1;
     margin-bottom: 4rem;
     height:100vh;
     width: 100%;
     background-color: rgba(229, 237, 248, 1);
 }
-.aboutmain{
-    /* flex: 1; */
+.implink{
     margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
     height:100vh;
     width: 100%;
-    background-color: rgba(229, 237, 248, 1);
-}
-.implink-contactmain{
-    /* flex: 1; */
-    margin-bottom: 4rem;
-    height:100vh;
-    width: 100%;
-    background-color: rgba(229, 237, 248, 1);
+    background-color: rgb(255, 255, 255);
 }
 
+.implink-heading{
+    font-family: var(--heading) ;
+    text-align: center;
+    margin: 0 0 1rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.implink-images{
+    height: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.implink-images span{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    width: 282px;
+    height: 255px;
+    border-radius: 24px;
+    gap: 1rem;
+    box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.444) ;
+}
+
+
+span .dgca{
+    width: 240.47px;
+    height: 61.21px;
+}
+span .mca{
+    width: 273.06px;
+    height: 80.83px;
+}
+
+span .bcas{
+    width: 232.65px;
+    height: 148.54px;
+}
+
+span .aai{
+    width: 229.37px;
+    height: 171.48px;
+}
+
+span .faa{
+    width: 160.62px;
+    height: 160.62px;
+}
+
+span .iata{
+    width: 180px;
+    height: 180px;
+}
+
+span .aci{
+    width: 161px;
+    height: 201px;
+}
+
+span .icao{
+    width: 177px;
+    height: 147px;    
+}
+
+
+.contactmain{
+    width: 100%;
+    gap: 2rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+}
+
+.contactheading{
+    width: 90%;
+    font-family: var(--heading) ;
+    text-align: center;
+    margin: 1.2rem 1rem 2rem 1rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    border-top: 2px solid white;
+    padding-top: 3rem;
+}
+
+
+.contactdetails{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem 3rem 0 3rem;
+    padding-bottom: 5rem;
+    border-bottom: 0.75px solid white;
+}
+
+.contactinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+
+.contactinfo-heading{
+    font-family: var(--heading) ;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.contactinfo-detail{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    font-family: var(--subheading);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+
+.contactaddress{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.contactaddress-heading{
+    font-family: var(--heading) ;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.contactaddress-content{
+    width: 45%;
+    font-family:var(--subheading);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+}
+
+.socials{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.socials-heading{
+    font-family: var(--heading) ;
+    text-align: center;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+}
+
+.socialh{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-family:var(--subheading);
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socialtag{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tm{
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-family: var(--subheading);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 3rem;
+    width: 100%;
+    text-align: center;
+}
