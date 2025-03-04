@@ -193,8 +193,8 @@ nav .navopt a:hover{
 .service-heading{
     font-family: var(--heading);
     text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.07em;
     
@@ -202,9 +202,10 @@ nav .navopt a:hover{
 
 .service-block{
     margin-bottom: 4rem;
-    width: 100%;
+    width: 95%;
     display: flex;
     flex-direction: column;
+    margin: 0 2rem 0 2rem;
     gap: 6rem;
     justify-content: center;
     align-content: space-between;
@@ -223,77 +224,6 @@ nav .navopt a:hover{
 .card2,.card4{
     flex-direction: row-reverse;
 }
-
-/* @keyframes slidein1{
-    0%{
-        display: none;
-        transform: translateX(100%);
-    }
-    100%{
-        display: flex;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slidein2{
-    0%{
-        display: none;
-        transform: translateX(-100%);
-        opacity: 0;
-        
-    }
-
-    50%{
-        opacity: 0.5;
-    }
-
-    90%{
-        display: flex;
-        transform: translateX(0);
-        opacity: 0.8;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-.card1,.card3{
-    animation: slidein1 1.2s linear 200ms ;
-}
-
-
-.card2{
-    animation: slidein2 1.2s linear 200ms ;
-} */
-
-/* @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  .section {
-    opacity: 0;
-    animation: slideUp 0.6s ease-in-out forwards;
-  }
-  
-  .section:nth-child(1) {
-    animation-delay: 0.2s;
-  }
-  
-  .section:nth-child(2) {
-    animation-delay: 0.4s;
-  }
-  
-  .section:nth-child(3) {
-    animation-delay: 0.6s;
-  }
-   */
 
    .section {
     opacity: 0;
@@ -470,7 +400,7 @@ span .icao{
     width: 90%;
     font-family: var(--heading) ;
     text-align: center;
-    margin: 1.2rem 1rem 2rem 1rem;
+    margin: 1.2rem 1rem 0 1rem;
     font-size: 2.4rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -501,7 +431,7 @@ span .icao{
 .contactinfo-heading{
     font-family: var(--heading) ;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
@@ -511,7 +441,7 @@ span .icao{
     flex-direction: column;
     gap: 0.75rem;
     font-family: var(--subheading);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.04em;
 }
@@ -528,17 +458,18 @@ span .icao{
 .contactaddress-heading{
     font-family: var(--heading) ;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
 
 .contactaddress-content{
-    width: 45%;
+    width: 48%;
     font-family:var(--subheading);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.04em;
+    text-align:center;
 }
 
 .socials{
@@ -551,7 +482,7 @@ span .icao{
 .socials-heading{
     font-family: var(--heading) ;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     gap: 1.5rem;
     text-transform: uppercase;
     letter-spacing: 0.07em;
@@ -562,7 +493,7 @@ span .icao{
     flex-direction: column;
     gap: 1rem;
     font-family:var(--subheading);
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     letter-spacing: 0.08em;
 }
