@@ -96,7 +96,7 @@ nav .navopt a:hover{
 
 .job-btn {
     font-family:var(--subheading);
-    margin: 0 4rem 0 1rem;
+    margin: 0 10px 0 1rem;
     padding: 6px 16px;
     border-radius: 16px;
     background-color: black;
