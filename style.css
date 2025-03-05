@@ -97,13 +97,13 @@ nav .navopt a:hover{
 .job-btn {
     font-family:var(--subheading);
     margin: 0 10px 0 1rem;
-    padding: 6px 16px;
+    padding: 6px 12px;
     border-radius: 16px;
     background-color: black;
     color: rgba(255, 255, 255, 0.964);
     cursor:pointer;
-    font-weight: 800;
-    font-size: 18px;
+    font-weight: 700;
+    font-size: 12px;
 }
 
 .job-btn:hover{
