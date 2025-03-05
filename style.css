@@ -150,7 +150,6 @@ nav .navopt a:hover{
     margin-bottom: 2rem;
     background-color: rgba(239, 241, 245, 0.945);
     justify-content: center;
-    align-content:center ;
 
 }
 
@@ -162,9 +161,10 @@ nav .navopt a:hover{
 }
 
 .textintro .headingtextintro{
+    margin-top: 3rem;
     font-family: var(--heading) ;
     text-align: center;
-    margin-bottom: 0.75rem;
+
 }
 .textintro .descintro{
     font-weight: 600;
@@ -300,33 +300,31 @@ nav .navopt a:hover{
     background-color: rgba(229, 237, 248, 1);
 }
 .implink{
-    margin-bottom: 4rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    height:100vh;
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(239, 241, 245, 0.945);
 }
 
 .implink-heading{
     font-family: var(--heading) ;
     text-align: center;
     margin: 0 0 1rem 0;
-    font-size: 3rem;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
 
 .implink-images{
     height: 80%;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 5%;
+    margin-left: 5%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .implink-images span{
@@ -335,51 +333,51 @@ nav .navopt a:hover{
     justify-content: center;
     align-items: center;
     background: #ffffff;
-    width: 282px;
-    height: 255px;
+    width: 142px;
+    height: 133px;
     border-radius: 24px;
-    gap: 1rem;
+    gap: 4px;
     box-shadow: 0 3px 4px 2px rgba(0, 0, 0, 0.444) ;
 }
 
 
 span .dgca{
-    width: 240.47px;
-    height: 61.21px;
+    width: 121.47px;
+    height: 30.21px;
 }
 span .mca{
-    width: 273.06px;
-    height: 80.83px;
+    width: 137.06px;
+    height: 40.83px;
 }
 
 span .bcas{
-    width: 232.65px;
-    height: 148.54px;
+    width: 117.65px;
+    height: 74.54px;
 }
 
 span .aai{
-    width: 229.37px;
-    height: 171.48px;
+    width: 115.37px;
+    height: 86px;
 }
 
 span .faa{
-    width: 160.62px;
-    height: 160.62px;
+    width: 81.62px;
+    height: 81.62px;
 }
 
 span .iata{
-    width: 180px;
-    height: 180px;
+    width: 91px;
+    height: 91px;
 }
 
 span .aci{
-    width: 161px;
-    height: 201px;
+    width: 81px;
+    height: 101px;
 }
 
 span .icao{
-    width: 177px;
-    height: 147px;    
+    width: 90px;
+    height: 75px;    
 }
 
 
@@ -400,7 +398,7 @@ span .icao{
     font-family: var(--heading) ;
     text-align: center;
     margin: 1.2rem 1rem 0 1rem;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.07em;
