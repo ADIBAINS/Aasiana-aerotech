@@ -29,6 +29,7 @@ header{
 
 nav ul{
     list-style: none;
+    padding: 0;
 }
 
 /*END*/
@@ -59,7 +60,6 @@ nav a{
     padding: 8px;
     border-radius: 10px;
     opacity: 0.85;
-    font-weight: 500;
 }
 
 
@@ -96,20 +96,21 @@ nav .navopt a:hover{
 
 .job-btn {
     font-family:var(--subheading);
-    margin: 0 10px 0 1rem;
-    padding: 6px 12px;
+    margin: 0 4rem 0 0;
+    padding: 8px 12px;
     border-radius: 16px;
     background-color: black;
     color: rgba(255, 255, 255, 0.964);
     cursor:pointer;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 12px;
 }
 
 .job-btn:hover{
+    transform: scale(1.02);
     background-color: white;
     color: black;
-    transition:  0.5s ease-in-out;
+    transition:  0.1s ease-in-out;
 }
 
 
@@ -265,6 +266,7 @@ nav .navopt a:hover{
     font-size: 2rem;
     font-weight: 600;
     text-transform: uppercase;
+    letter-spacing: 0.07em;
 }
 
 .servicecardpara{
