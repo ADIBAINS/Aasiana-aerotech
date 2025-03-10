@@ -28,16 +28,21 @@
                             <ul>
                                 <li class="nav-menu"><a href="#navhome">HOME</a></li>
                                 <li class="nav-menu"><a href="#navservices">SERVICES</a></li>
-                                <li class="nav-menu"><a href="#navclients">CLIENTS</a></li>
-                                <li class="nav-menu"><a href="#navtestimonials">TESTIMONIALS</a></li>
+                               <li class="nav-menu drop"><a href="#"><i class="fa-solid fa-caret-down"></i>CLIENTS</a>
+                            <div class="dropdown">
+                                <a href="#navclients"> OUR CLIENTS</a>
+                                <a href="#navtestimonials">TESTIMONIALS</a>
+                            </div>
+                        </li>
+                               <li class="nav-menu"><a href="#navgallery">GALLERY</a></li>
                                 <!-- <li class="nav-menu"><a href="#navabout">ABOUT</a></li> -->
                                 <li class="nav-menu"><a href="#navimplinks">IMPORTANT LINKS</a></li>
                                 <li class="nav-menu"><a href="#navcontact">CONTACT</a></li>
                             </ul>
                     </div>
                     <div class="optjob">
-                        <button class="job-btn">GET IN TOUCH</button>
-                    </div>
+                    <button class="job-btn" data-open-modal>GET IN TOUCH</button>
+                </div>
                 </nav>
             </header>
 
@@ -107,7 +112,25 @@
                 </div>
             </div>
         </div>
+                <div class="clientsmain" id="navclients" style="height: 100vh; background-color: antiquewhite;">
+        </div>
 
+
+        <div class="testimonialsmain" id="navtestimonials" style="height: 100vh;">
+        </div>
+
+
+        <div class="gallerymain" id="navgallery" >
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="WhatsApp Image 2025-03-10 at 20.45.39_56888fa4.jpg" alt="Slide 1"></div>
+                    <div class="slide"><img src="WhatsApp Image 2025-03-10 at 20.46.03_8d18a377.jpg" alt="Slide 2"></div>
+                    <div class="slide"><img src="WhatsApp Image 2025-03-10 at 20.45.39_56888fa4.jpg" alt="Slide 3"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </div>
 
 
 
@@ -122,49 +145,49 @@
                 important links
             </div>
             <div class="implink-images">
-                <a href="https://www.dgca.gov.in/digigov-portal/">
+                <a href="https://www.dgca.gov.in/digigov-portal/" target="_blank">
                     <span>
                         <img src="DGCA LOGO.png" alt="DGCA" class="dgca">
                     </span>
                     <h4>Directorate General of Civil Aviation</h4>
                 </a>
-                <a href="https://www.civilaviation.gov.in/">
+                <a href="https://www.civilaviation.gov.in/" target="_blank">
                     <span>
                         <img src="MCA LOGO 1.PNG" alt="" class="mca">
                     </span>
                     <h4>Ministry of Civil Aviation</h4>
                 </a>
-                <a href="https://bcasindia.gov.in/#/">
+                <a href="https://bcasindia.gov.in/#/" target="_blank">
                     <span>
                         <img src="BCAS LOGO.jpeg" alt="" class="bcas">
                     </span>
                     <h4>Bureau of Civil Aviation Security</h4>
                 </a>
-                <a href="https://www.aai.aero/">
+                <a href="https://www.aai.aero/" target="_blank">
                     <span>
                         <img src="AAI LOGO.png" alt="" class="aai">
                     </span>
                     <h4>Airports Authority of India</h4>
                 </a>
-                <a href="https://www.faa.gov/">
+                <a href="https://www.faa.gov/" target="_blank">
                     <span>
                         <img src="FAA LOGO.png" alt="" class="faa">
                     </span>
                     <h4>Federal Aviation Administration</h4>
                 </a>
-                <a href="https://www.iata.org/">
+                <a href="https://www.iata.org/" target="_blank">
                     <span>
                         <img src="IATA LOGO.png" alt="" class="iata">
                     </span>
                     <h4>International Air Transport Association</h4>
                 </a>
-                <a href="https://www.aci-europe.org/">
+                <a href="https://www.aci-europe.org/" target="_blank">
                     <span>
                         <img src="ACI LOGO.png" alt="" class="aci">
                     </span>
                     <h4>Airports Council International</h4>
                 </a>
-                <a href="https://www.icao.int/Pages/default.aspx">
+                <a href="https://www.icao.int/Pages/default.aspx" target="_blank">
                     <span>
                         <img src="ICAO LOGO.png" alt="" class="icao">
                     </span>
@@ -203,7 +226,38 @@
         </div>
 
     </div>
+        <dialog data-modal id="contactDialog">
+        <form id="contactForm">
+            <div class="modhead">PLEASE ENTER YOUR DETAILS</div>
+
+            <label for="name">
+                <div class="forms">
+                    <span>NAME</span>
+                    <input type="text" name="name" placeholder="Enter Your Name" id="name" required>
+                </div>
+            </label>
+            <label for="email">
+                <div class="forms">
+                    <span>EMAIL</span>
+                    <input type="email" name="email" placeholder="Enter Your Email" id="email" required>
+                </div>
+
+            </label>
+            <label for="text">
+                <div class="forms">
+                    <span>MESSAGE</span>
+                    <textarea id="message" name="Message" placeholder="Enter Your Message" required></textarea>
+                </div>
+            </label>
+            <div class="btn">
+                <button class="sub" type="submit">SUBMIT</button>
+                <button class=" sub can" data-close-modal type="button">CANCEL</button>
+            </div>
+
+        </form>
+    </dialog>
     <script src="main.js"></script>
+    
 </body>
 
 </html>
