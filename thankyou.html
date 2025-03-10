@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root{
+            --bg-gradient: linear-gradient(
+    228.96deg,
+    rgba(49, 30, 112, 1) 25.39999485015869%,
+    rgba(124, 40, 78, 1) 69.9999988079071%,
+    rgba(199, 50, 44, 1) 100%
+  );
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 80px;
+        }
+        h1{
+            font-size: 48px;
+        }
+        i{
+            color: var(
+    --bg-gradient,
+    linear-gradient(
+      228.96deg,
+      rgba(49, 30, 112, 1) 25.39999485015869%,
+      rgba(124, 40, 78, 1) 69.9999988079071%,
+      rgba(199, 50, 44, 1) 100%
+    )
+  );
+            font-size: 140px;
+        }
+        p{
+            font-size: 24px;
+            color: var(
+    --bg-gradient,
+    linear-gradient(
+      228.96deg,
+      rgba(49, 30, 112, 1) 25.39999485015869%,
+      rgba(124, 40, 78, 1) 69.9999988079071%,
+      rgba(199, 50, 44, 1) 100%
+    )
+  );
+        }
+    </style>
+    <script>
+        // Redirect back to the homepage after 2 seconds
+        setTimeout(() => {
+            window.location.href = "index.html"; 
+        }, 4000);
+    </script>
+</head>
+<body>
+    <i class="fa-regular fa-envelope"></i>
+    <h1>Thanks for submitting!</h1>
+    <p>Your message has been sent successfully.</p>
+    <p>Redirecting you back...</p>
+</body>
+</html>
