@@ -51,6 +51,7 @@ nav{
     background-color: white;
     border: 1.2px solid rgba(0, 0, 0, 0.303);
     border-right: none;
+    border-radius:  10px;;
 }
 
 nav a{
@@ -113,6 +114,40 @@ nav .navopt a:hover{
     transition:  0.1s ease-in-out;
 }
 
+.drop{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.dropdown a{
+    line-height: 2rem;
+}
+
+.dropdown{
+    cursor: pointer;
+    position: absolute;
+    top: 1.5rem;
+    display: none;
+    background-color: #ffffff;
+    height: auto;
+    width: auto;
+    border-radius: 14px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.232);
+    padding: 1rem;
+}
+
+.drop:hover .dropdown{
+    display: block;
+}
+
+i{
+    width: 1rem;
+    height: 1rem;
+    color: rgba(111, 111, 107, 0.847);
+}
 
 
 /* END */
@@ -120,16 +155,15 @@ nav .navopt a:hover{
 
 /* START */
 
-/* .homepage{
-    height:116vh;
+.homepage{
+    height:120vh;
     width: 100%;
     background-image: url("./assets/mainback.JPG");
     background-size: 100% 100%;
     margin-top: -12rem;
     background-size:cover;
     color: black;
-    flex: 1;
-} */
+}
 
 
 
@@ -147,7 +181,7 @@ nav .navopt a:hover{
 
     height:100vh;
     margin-bottom: 2rem;
-    background-color: rgba(195, 211, 237, 0.25);
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: space-between;
 
@@ -299,6 +333,81 @@ nav .navopt a:hover{
 .card2{
     flex-direction: row-reverse;
 }
+
+
+.gallerymain{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+    height: 100vh;
+}
+
+.slider-container {
+    width: 90%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 65%;
+    display: block;
+    border-radius: 10px;
+    background-position: top;
+    background-size: cover;
+}
+
+/* Navigation Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    height: 90vh;
+    width: 5rem;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .implink{
     padding: 3rem 0;
@@ -549,3 +658,157 @@ span .icao{
     width: 100%;
     text-align: center;
 }
+
+
+
+
+
+
+
+
+/* DIALOG STYLES */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.25rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 24px;
+    box-shadow: 0 0 5px 2px rgba(40, 39, 39, 0.878) ;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.forms span{
+    font-family: var(--subheading);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.923);
+    letter-spacing: 0.08em;
+    padding: 0 0 0.5rem 0.25rem;
+}
+
+.forms input{
+    width: 360px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.668);
+    color: rgb(19, 19, 19);
+    font-family: var(--subheading);
+    font-size: 18px;
+    padding: 0.25rem;
+    border: 0.5px solid rgba(27, 27, 27, 0.874);
+}
+
+
+.forms textarea{
+    width: 360px;
+    height: 175px;
+    background-color: rgba(255, 255, 255, 0.818);
+    color: rgb(19, 19, 19);
+    font-family: var(--subheading);
+    font-size: 18px;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border: 0.75px solid rgba(27, 27, 27, 0.874);
+    border-radius: 24px;
+
+}
+.forms textarea:focus{
+    border-radius: 18px;
+    
+}
+
+.forms textarea::placeholder{
+    display: flex;
+    align-items: flex-start;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+
+input:focus::placeholder {
+    color: transparent;
+  }
+  
+textarea:focus::placeholder {
+    color: transparent;
+  }
+
+.forms input::placeholder{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    font-size: 14px;
+}
+
+.sub{
+    font-family: var(--subheading);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.modhead{
+    text-align: center;
+    width: 70%;
+    font-family: var(--heading);
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    padding: 1.25rem;
+    border-bottom: 1px solid black;
+}
+
+.can{
+    background-color: white;
+    color: black;
+}
+
+form .btn{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog {
+    border: none;
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    
+    /* Ensure the dialog is centered */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
