@@ -87,17 +87,22 @@ document.addEventListener("DOMContentLoaded", function () {
         modal.close();
         setTimeout(() => {
           window.location.href = "./thankyou.html"; // Redirect to Thank You page
-      }, 3000); // Wait 2 sec before redirecting
+      }, 1000); // Wait 2 sec before redirecting
       
       setTimeout(() => {
           window.location.href = "./index.html"; // Redirect back to main page
-      }, 7000);
+      }, 6000);
       })
       .catch(error => {
         console.error("EmailJS Error:", error);
         alert("Error sending message: " + JSON.stringify(error));
       });
   });
+});
+
+
+document.getElementById("contactForm").addEventListener("submit",function (event){
+  document.getElementById("sub").disabled = true;
 });
 
 
